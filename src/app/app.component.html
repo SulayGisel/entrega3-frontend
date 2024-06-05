@@ -9,7 +9,7 @@
 <body>
 
 
-<nav>
+<nav *ngIf="isVisible">
   <ul>
     <li>
       <a routerLink="/login" routerLinkActive="active">login</a>
@@ -23,8 +23,5 @@
 
 
 <router-outlet></router-outlet>
-
-
-
 </body>
 </html>
